@@ -5,7 +5,6 @@ int numSubarraysWithSum(vector<int> &nums, int goal)
   int prefixsum = 0;
   int ans = 0;
   unordered_map<int, int> mpp;
-  mpp[0] = 1;
   for (auto num : nums)
   {
     prefixsum += num;
