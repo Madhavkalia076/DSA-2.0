@@ -1,16 +1,16 @@
 #include <bits/stdc++.h>
 using namespace std;
-int findMax(vector<int> a, int k)
+int findMax(vector<int> arr, int k)
 {
-  int n = a.size();
+  int n = arr.size();
   int ans = 0;
   vector<int> leftsum(k + 1, 0);
   vector<int> rightsum(k + 1, 0);
 
   for (int i = 1; i <= k; i++)
   {
-    leftsum[i] = leftsum[i - 1] + a[i - 1];
-    rightsum[i] = rightsum[i - 1] + a[n - i];
+    leftsum[i] = leftsum[i - 1] + arr[i - 1];
+    rightsum[i] = rightsum[i - 1] + arr[n - i];
   }
 
   for (int i = 0; i <= k; i++)
