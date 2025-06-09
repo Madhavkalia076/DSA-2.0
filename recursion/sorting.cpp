@@ -39,7 +39,7 @@ int main()
     cout << i << " ";
   }
   cout << endl;
-  cout << "after sorting nums: ";
+  cout << "after sorting nums will be: ";
   sort(nums);
   for (int i : nums)
   {
