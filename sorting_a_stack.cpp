@@ -13,14 +13,14 @@ void insert(stack<int> &s, int temp)
   insert(s, temp);
   s.push(val);
 }
-void sort(stack<int> &s)
+void sort(stack<int> &st)
 {
-  if (s.empty())
+  if (st.empty())
     return;
-  int temp = s.top();
-  s.pop();
-  sort(s);
-  insert(s, temp);
+  int temp = st.top();
+  st.pop();
+  sort(st);
+  insert(st, temp);
 }
 int main()
 {
