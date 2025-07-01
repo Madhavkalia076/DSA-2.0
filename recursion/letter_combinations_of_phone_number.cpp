@@ -15,7 +15,7 @@ void solve(string digits, int index, string current, string mapping[])
 }
 int main()
 {
-  string digits = "23";
+  string digits = "234";
 
   cout << "digits: " << digits;
   string mapping[] = {"", "", "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"};
