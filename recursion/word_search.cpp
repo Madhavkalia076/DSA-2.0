@@ -39,7 +39,7 @@ int main()
                                 {'S', 'F', 'C', 'S'},
                                 {'A', 'D', 'E', 'E'}};
 
-  string word = "ABCCED";
+  string word = " SEE";
   int m = board.size();
   int n = board[0].size();
   vector<vector<int>> vis(m, vector<int>(n, -1));
