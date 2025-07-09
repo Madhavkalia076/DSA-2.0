@@ -23,19 +23,19 @@ void solve(int col, vector<string> &board, vector<vector<string>> &ans, vector<i
     }
   }
 }
-vector<vector<string>> Nquuen(int n)
+vector<vector<string>> Nquuen(int x)
 {
   vector<vector<string>> ans;
-  vector<string> board(n);
-  string s(n, '.');
-  for (int i = 0; i < n; i++)
+  vector<string> board(x);
+  string s(x, '.');
+  for (int i = 0; i < x; i++)
   {
     board[i] = s;
   }
-  vector<int> leftrow(n, 0);
-  vector<int> upperdiagonal(2 * (n - 1), 0);
-  vector<int> lowerdiagonal(2 * (n - 1), 0);
-  solve(0, board, ans, leftrow, upperdiagonal, lowerdiagonal, n);
+  vector<int> leftrow(x, 0);
+  vector<int> upperdiagonal(2 * (x - 1), 0);
+  vector<int> lowerdiagonal(2 * (x - 1), 0);
+  solve(0, board, ans, leftrow, upperdiagonal, lowerdiagonal, x);
   return ans;
 }
 int main()
