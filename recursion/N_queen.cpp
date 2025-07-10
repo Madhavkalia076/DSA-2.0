@@ -40,10 +40,10 @@ vector<vector<string>> Nquuen(int x)
 }
 int main()
 {
-  int n;
-  cout << "enter the value of n: ";
-  cin >> n;
-  vector<vector<string>> s = Nquuen(n);
+  int x;
+  cout << "enter the value of x: ";
+  cin >> x;
+  vector<vector<string>> s = Nquuen(x);
   for (auto i : s)
   {
     for (auto j : i)
