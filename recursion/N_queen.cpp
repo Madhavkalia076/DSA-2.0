@@ -23,7 +23,7 @@ void solve(int col, vector<string> &board, vector<vector<string>> &ans, vector<i
     }
   }
 }
-vector<vector<string>> Nquuen(int x)
+vector<vector<string>> Nqueen(int x)
 {
   vector<vector<string>> ans;
   vector<string> board(x);
@@ -43,7 +43,7 @@ int main()
   int x;
   cout << "enter the value of x: ";
   cin >> x;
-  vector<vector<string>> s = Nquuen(x);
+  vector<vector<string>> s = Nqueen(x);
   for (auto i : s)
   {
     for (auto j : i)
