@@ -18,8 +18,8 @@ using namespace std;
 
 int main()
 {
-  vector<int> arr = {1, 2, 3, 5, 8, 10};
-  int target = 10;
+  vector<int> arr = {1, 2, 3, 5, 8, 10, 11};
+  int target = 11;
   int n = arr.size();
   vector<vector<int>> dp(n + 1, vector<int>(target + 1, 0));
   for (int i = 0; i < n + 1; i++)
