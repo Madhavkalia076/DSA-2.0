@@ -18,7 +18,7 @@ using namespace std;
 
 int main()
 {
-  vector<int> arr = {1, 2, 3, 5, 8, 10, 11};
+  vector<int> arr = {1, 2, 3, 5, 8, 10, 11, 12};
   int target = 11;
   int n = arr.size();
   vector<vector<int>> dp(n + 1, vector<int>(target + 1, 0));
