@@ -27,9 +27,9 @@ bool subsetSum(vector<int> &nums, int target)
 bool equalsum(vector<int> nums)
 {
   int sum = 0;
-  for (int i : nums)
+  for (int it : nums)
   {
-    sum += i;
+    sum += it;
   }
   if (sum % 2 != 0)
     return false;
