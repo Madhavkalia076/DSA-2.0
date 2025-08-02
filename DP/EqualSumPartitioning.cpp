@@ -38,7 +38,7 @@ bool equalsum(vector<int> nums)
 }
 int main()
 {
-  vector<int> arr = {2, 1, 11, 8, 12, 6, 16};
+  vector<int> arr = {2, 1, 11, 8, 12, 6, 16,15};
   cout << equalsum(arr);
   return 0;
 }
