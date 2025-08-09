@@ -3,7 +3,7 @@ using namespace std;
 
 int main()
 {
-  vector<int> arr = {1, 2, 3, 4, 5, 6,7,8,9,10};
+  vector<int> arr = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11};
   int n = arr.size();
   int sum = 6;
   vector<vector<bool>> dp(n + 1, vector<bool>(sum + 1, false));
